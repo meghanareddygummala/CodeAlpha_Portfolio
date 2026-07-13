@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#111827;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.home{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.home h1{
+font-size:60px;
+}
+
+.home h1 span{
+color:#38bdf8;
+}
+
+.home p{
+margin:20px 0;
+font-size:22px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+color:#0f172a;
+}
+
+section{
+padding:100px 80px;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.profile{
+width:250px;
+height:250px;
+border-radius:50%;
+background:#38bdf8;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:70px;
+font-weight:bold;
+}
+
+.about-text{
+flex:1;
+line-height:1.8;
+font-size:18px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.4s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+background:#38bdf8;
+}
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.4s;
+}
+
+.project:hover{
+transform:scale(1.05);
+background:#38bdf8;
+}
+
+.project h3{
+margin-bottom:15px;
+}
+
+.contact{
+text-align:center;
+line-height:2;
+font-size:18px;
+}
+
+footer{
+background:#111827;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:20px;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.home h1{
+font-size:40px;
+}
+
+.about{
+justify-content:center;
+text-align:center;
+}
+
+.profile{
+margin:auto;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Meghana</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="home" id="home">
+
+<div>
+
+<h1>Hello, I'm <span>Meghana</span></h1>
+
+<p>Frontend Web Developer</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<div class="profile">M</div>
+
+<div class="about-text">
+
+<p>
+I am a passionate Frontend Web Developer with knowledge of HTML, CSS and JavaScript. I enjoy creating responsive and attractive websites with modern UI designs.Always eager to learn new technologies, improve coding skills, and build creative web projects. Dedicated to developing simple, attractive, and efficient websites.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+<div class="skill">MySql</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">VS Code</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Image Gallery</h3>
+<p>Responsive gallery with filters, lightbox, hover effects and smooth transitions.</p>
+</div>
+
+<div class="project">
+<h3>Calculator</h3>
+<p>Modern calculator using HTML, CSS and JavaScript with keyboard support.</p>
+</div>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Responsive portfolio with animations, smooth scrolling and contact section.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="contact">
+
+<p><b>Email:</b> meghana@example.com</p>
+
+<p><b>Phone:</b> +91 9876543210</p>
+
+<p><b>Location:</b> India</p>
+
+<br>
+
+<a href="#" class="btn">Download Resume</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Meghana | All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+document.querySelectorAll('nav a').forEach(link=>{
+
+link.addEventListener('click',function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+
+behavior:'smooth'
+
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
